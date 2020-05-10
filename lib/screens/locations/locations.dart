@@ -10,7 +10,7 @@ class Locations extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Locations'),
+        title: Text('Happy Home Hub'),
       ),
       body: ListView(
         children: locations
