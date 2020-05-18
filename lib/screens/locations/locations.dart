@@ -12,12 +12,21 @@ class Locations extends StatelessWidget {
       appBar: AppBar(
         title: Text('Happy Home Hub'),
       ),
-      body: ListView(
-        children: locations
-            .map((location) => GestureDetector(
-                onTap: () => _onLocationTap(context, location.id),
-                child: Container(child: Text(location.name))))
-            .toList(),
+      body: SafeArea(
+        child: Column(children: <Widget>[
+          GestureDetector(
+            onTap: () => _onLocationTap(context, 1) ,
+            child: Text("Relax"),
+          ),
+          GestureDetector(
+            onTap: () => _onLocationTap(context, 2) ,
+            child: Text("Learning"),
+          ),
+          GestureDetector(
+            onTap: () => _onLocationTap(context, 3) ,
+            child: Text("Exercing"),
+          )
+        ],)
       ),
     );
   }
@@ -27,3 +36,12 @@ class Locations extends StatelessWidget {
         arguments: {"id": locationID});
   }
 }
+
+
+// body: ListView(
+//         children: locations
+//             .map((location) => GestureDetector(
+//                 onTap: () => _onLocationTap(context, location.id),
+//                 child: Container(child: Text(location.name))))
+//             .toList(),
+//       ),
