@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import '../../app.dart';
 import '../../models/location.dart';
+import 'dart:math';
 
 class Locations extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // NOTE: we'll be moving this to a scoped_model later
     final locations = Location.fetchAll();
+
+    int next(int min, int max) => min + Random().nextInt(max - min);
 
     return Scaffold(
       appBar: AppBar(
@@ -15,15 +18,15 @@ class Locations extends StatelessWidget {
       body: SafeArea(
         child: Column(children: <Widget>[
           GestureDetector(
-            onTap: () => _onLocationTap(context, 1) ,
+            onTap: () => _onLocationTap(context, Random().nextInt(3) + 1) ,
             child: Text("Relax"),
           ),
           GestureDetector(
-            onTap: () => _onLocationTap(context, 2) ,
+            onTap: () => _onLocationTap(context, next(4, 7)) ,
             child: Text("Learning"),
           ),
           GestureDetector(
-            onTap: () => _onLocationTap(context, 3) ,
+            onTap: () => _onLocationTap(context, next(7, 10)) ,
             child: Text("Exercing"),
           )
         ],)
