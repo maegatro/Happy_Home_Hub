@@ -33,31 +33,31 @@ class Location {
         // LocationFact('Did You Know',
         //     'There are three cities that surround Mount Fuji: Gotemba, Fujiyoshida and Fujinomiya.'),
       ]),
-      Location(5, 'Learning', 'assets/images/learning-japanese.jpg', [
+      Location(5, 'Learning', 'assets/images/learning-japanese.png', [
         LocationFact('Learn Japanese',
             'Start by learning simple Japanese words and phrases with some books or online tutorials'),
         // LocationFact('How to Get There',
         //     'Kyoto airport, with several terminals, is located 16 kilometres south of the city and is also known as Kyoto. Kyoto can also be reached by transport links from other regional airports.'),
       ]),
-      Location(6, 'Knitting', 'assets/images/knitting.jpg', [
+      Location(6, 'Knitting', 'assets/images/knitting.png', [
         LocationFact('Knitting',
             'Follow a Youtube tutorial to practice simple knitting partterns'),
         // LocationFact('How to Get There',
         //     'Kyoto airport, with several terminals, is located 16 kilometres south of the city and is also known as Kyoto. Kyoto can also be reached by transport links from other regional airports.'),
       ]),
-      Location(7, 'Stretching', 'assets/images/stretching.jpg', [
+      Location(7, 'Stretching', 'assets/images/stretching.png', [
         LocationFact('Stretching',
             'Start with your muscle in a slightly lengthened position. Gently lean into a stretch. Relax and repeat.'),
         // LocationFact('How to Get There',
         //     'Kyoto airport, with several terminals, is located 16 kilometres south of the city and is also known as Kyoto. Kyoto can also be reached by transport links from other regional airports.'),
       ]),
-      Location(8, 'Weight training', 'assets/images/weight-training.jpg', [
+      Location(8, 'Weight training', 'assets/images/weight-training.png', [
         LocationFact('Weight training',
             'Loosen up with a few very light exercises first, then choose a suitable weight and increase gradually'),
         // LocationFact('How to Get There',
         //     'Kyoto airport, with several terminals, is located 16 kilometres south of the city and is also known as Kyoto. Kyoto can also be reached by transport links from other regional airports.'),
       ]),
-      Location(9, 'Dancing', 'assets/images/dancing.jpg', [
+      Location(9, 'Dancing', 'assets/images/dancing.png', [
         LocationFact('Dancing',
             'Play your favorite music and move your body! Or follow a dance tutorial on Youtube'),
         // LocationFact('How to Get There',

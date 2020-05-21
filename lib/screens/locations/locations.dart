@@ -12,27 +12,50 @@ class Locations extends StatelessWidget {
     int next(int min, int max) => min + Random().nextInt(max - min);
 
     return Scaffold(
+      backgroundColor: Colors.teal,
       appBar: AppBar(
         title: Text('Happy Home Hub'),
+        backgroundColor: Colors.teal[900],
       ),
       body: SafeArea(
-        child: Column(children: <Widget>[
+        child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
           GestureDetector(
-            onTap: () => _onLocationTap(context, Random().nextInt(3) + 1) ,
-            child: Text("Relax"),
-          ),
+              onTap: () => _onLocationTap(context, Random().nextInt(3) + 1) ,
+              child: Container(
+                width: 348.0,
+              height: 80.0,
+                color: Colors.teal[800],
+                child: Text("Relax", textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 60, color: Colors.white, fontWeight: FontWeight.bold,), 
+                ),
+              ),
+            ),
           GestureDetector(
             onTap: () => _onLocationTap(context, next(4, 7)) ,
-            child: Text("Learning"),
+            child: Container(
+              width: 348.0,
+              height: 80.0,
+              color: Colors.teal[800],
+              child: Text("Learning", textAlign: TextAlign.center, style: TextStyle(fontSize: 60, color: Colors.white, fontWeight: FontWeight.bold,),),
+            ),
           ),
           GestureDetector(
             onTap: () => _onLocationTap(context, next(7, 10)) ,
-            child: Text("Exercing"),
-          )
-        ],)
+              child: Container(
+              width: 348.0,
+              height: 80.0,
+              color: Colors.teal[800],
+              child: Text("Exercising", textAlign: TextAlign.center, style: TextStyle(fontSize: 60, color: Colors.white, fontWeight: FontWeight.bold,),),
+            ),          )
+        ],),
+        )
       ),
     );
   }
+
 
   _onLocationTap(BuildContext context, int locationID) {
     Navigator.pushNamed(context, LocationDetailRoute,
