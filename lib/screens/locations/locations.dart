@@ -14,7 +14,7 @@ class Locations extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.teal,
       appBar: AppBar(
-        title: Text('Happy Home Hub'),
+        title: Text('Happy Home Hub', style: TextStyle(fontFamily: 'Righteous')),
         backgroundColor: Colors.teal[900],
       ),
       body: SafeArea(
@@ -22,33 +22,40 @@ class Locations extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
+          CircleAvatar(
+            radius: 120.0,
+            backgroundImage: AssetImage('assets/images/happy.png'),
+            backgroundColor: Colors.teal,
+          ),
+          Text('How do you feel today?', style: TextStyle(fontFamily: 'Righteous')),
           GestureDetector(
               onTap: () => _onLocationTap(context, Random().nextInt(3) + 1) ,
               child: Container(
-                width: 348.0,
-              height: 80.0,
+                width: 300.0,
+                height: 115.0,
                 color: Colors.teal[800],
-                child: Text("Relax", textAlign: TextAlign.center,
-                              style: TextStyle(fontSize: 60, color: Colors.white, fontWeight: FontWeight.bold,), 
+                child:
+                  Text("Relax", textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 60, color: Colors.white, fontWeight: FontWeight.bold, fontFamily: 'Pacifico'), 
                 ),
               ),
             ),
           GestureDetector(
             onTap: () => _onLocationTap(context, next(4, 7)) ,
             child: Container(
-              width: 348.0,
-              height: 80.0,
+              width: 300.0,
+              height: 115.0,
               color: Colors.teal[800],
-              child: Text("Learning", textAlign: TextAlign.center, style: TextStyle(fontSize: 60, color: Colors.white, fontWeight: FontWeight.bold,),),
+              child: Text("Learning", textAlign: TextAlign.center, style: TextStyle(fontSize: 60, color: Colors.white, fontWeight: FontWeight.bold, fontFamily: 'Pacifico'),),
             ),
           ),
           GestureDetector(
             onTap: () => _onLocationTap(context, next(7, 10)) ,
               child: Container(
-              width: 348.0,
-              height: 80.0,
+              width: 300.0,
+              height: 115.0,
               color: Colors.teal[800],
-              child: Text("Exercising", textAlign: TextAlign.center, style: TextStyle(fontSize: 60, color: Colors.white, fontWeight: FontWeight.bold,),),
+              child: Text("Exercising", textAlign: TextAlign.center, style: TextStyle(fontSize: 60, color: Colors.white, fontWeight: FontWeight.bold, fontFamily: 'Pacifico'),),
             ),          )
         ],),
         )

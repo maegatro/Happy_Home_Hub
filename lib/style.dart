@@ -7,14 +7,14 @@ const BodyTextSize = 24.0;
 const String FontNameDefault = 'Montserrat';
 
 const AppBarTextStyle = TextStyle(
-  fontFamily: FontNameDefault,
+  fontFamily: 'Pacifico',
   fontWeight: FontWeight.w300,
   fontSize: MediumTextSize,
   color: Colors.white,
 );
 
 const TitleTextStyle = TextStyle(
-  fontFamily: FontNameDefault,
+  fontFamily: 'Righteous',
   fontWeight: FontWeight.w300,
   fontSize: LargeTextSize,
   color: Colors.white,

@@ -34,3 +34,5 @@ class LocationDetail extends StatelessWidget {
         .toList();
   }
 }
+
+
