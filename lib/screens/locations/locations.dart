@@ -27,7 +27,7 @@ class Locations extends StatelessWidget {
             backgroundImage: AssetImage('assets/images/happy.png'),
             backgroundColor: Colors.teal,
           ),
-          Text('How do you feel today?', style: TextStyle(fontFamily: 'Righteous')),
+          Text('What do you feel like doing today?', textAlign: TextAlign.center, style: TextStyle(fontFamily: 'Righteous', fontWeight: FontWeight.bold, fontSize:35)),
           GestureDetector(
               onTap: () => _onLocationTap(context, Random().nextInt(3) + 1) ,
               child: Container(
