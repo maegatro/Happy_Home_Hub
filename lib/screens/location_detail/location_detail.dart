@@ -56,7 +56,7 @@ class _LocationDetailState extends State<LocationDetail> {
       minStr = "60";
       timeLeftInSec = 3600;
     } else if (activity == "Meditation") {
-      timeLeftInSec = 5;
+      timeLeftInSec = 300;
     }
 
     timer = Timer.periodic(Duration(seconds: 1), (timer) {
