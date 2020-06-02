@@ -1,4 +1,4 @@
-package com.example.tourismandco;
+package happy.home.hub;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
