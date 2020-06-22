@@ -4,6 +4,8 @@ Happy Home Hub is an ios app created with Flutter.
 
 Happy Home Hub suggestes fun activities that keeep you entertained at home. 
 
+You can install it on Google Play Store
+https://play.google.com/store/apps/details?id=happy.home.hub
 
 ![hpmepage](https://user-images.githubusercontent.com/52077647/82753153-882b1400-9dfe-11ea-91d4-147ae5c472d4.png)
 
